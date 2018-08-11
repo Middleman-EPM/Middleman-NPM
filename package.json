@@ -1,0 +1,29 @@
+{
+  "name": "middleman-npm",
+  "version": "1.0.0",
+  "description": "Middleman-EPM (Express/Node Performance Monitor) audits express routes/middleware performance and gives access to a dashboard, which visually represents the data including the route mapping",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Middleman-EPM/Middleman-NPM.git"
+  },
+  "keywords": [
+    "express",
+    "node",
+    "performance",
+    "middleware",
+    "monitor",
+    "d3",
+    "visual",
+    "visualization"
+  ],
+  "author": "Jung Shin, Chris Saavedra, Mia Huynh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Middleman-EPM/Middleman-NPM/issues"
+  },
+  "homepage": "https://github.com/Middleman-EPM/Middleman-NPM#readme"
+}
