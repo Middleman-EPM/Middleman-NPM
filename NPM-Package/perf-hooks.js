@@ -1,6 +1,6 @@
 const {performance, PerformanceObserver} = require('perf_hooks');
 
-function wrap(passedFunc) {
+exports.wrap  = (passedFunc) => {
   
   const fn = performance.timerify(passedFunc);
   const funcName = passedFunc.__proto__.func
@@ -21,14 +21,8 @@ function wrap(passedFunc) {
     performance.clearFunctions();
     
     if (passedFunc.__proto__.lastFunc) {
-      
-      // if (map[passedFunc.__proto__.routeData.route][passedFunc.__proto__.routeData.method]){
-          map[passedFunc.__proto__.routeData.route][passedFunc.__proto__.routeData.method].data.push(passedFunc.__proto__.routeData.data)
-          //console.log(map[passedFunc.__proto__.routeData.route][passedFunc.__proto__.routeData.method].data)
-      //    delete passedFunc.__proto__.routeData;
-      //  }
+          map[passedFunc.__proto__.routeData.route][passedFunc.__proto__.routeData.method].push(passedFunc.__proto__.routeData.data)     
        }
-      console.log(map)
       });
 
   obs.observe({entryTypes: ['function']})

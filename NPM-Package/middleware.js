@@ -1,3 +1,4 @@
+import wrap from './perf-hooks'
 exports.middlewareTracker = (req, res, next) => {
     const route = req.originalUrl
     const method = req.method
@@ -7,11 +8,11 @@ exports.middlewareTracker = (req, res, next) => {
     if (!map[route]) {
       
       map[route] = {}
-      map[route][method.toLowerCase()] ={data: []}
+      map[route][method.toLowerCase()] = []
     }
   
     if (!map[route][method]){
-      map[route][method.toLowerCase()] ={data: []}
+      map[route][method.toLowerCase()] = []
     }
   
     for (let i = 0; i < app._router.stack.length; i += 1){
@@ -22,8 +23,8 @@ exports.middlewareTracker = (req, res, next) => {
         const funcName = app._router.stack[i].name;
         app._router.stack[i].handle = wrap(app._router.stack[i].handle);
         app._router.stack[i].handle.__proto__.func = funcName.length > 0 ? funcName: 'middleware First loop';  
-        app._router.stack[i].handle.__proto__.route = route;
-        app._router.stack[i].handle.__proto__.method = method;
+        app._router.stack[i].handle.__proto__.route = route; //redundant
+        app._router.stack[i].handle.__proto__.method = method; //redudnant
         app._router.stack[i].handle.__proto__.routeData = routeData;
         }
       }
@@ -56,3 +57,4 @@ exports.middlewareTracker = (req, res, next) => {
     }
     next();
   }
+
