@@ -1,5 +1,15 @@
 import wrap from './perf-hooks'
+import mapApp from './routes-mapping'
+
+const map = {}
+let mapped = false;
+
 exports.middlewareTracker = (req, res, next) => {
+
+  if (!mapped){
+    mapped = true;
+    mapApp()
+  }
     const route = req.originalUrl
     const method = req.method
   
