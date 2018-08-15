@@ -4,7 +4,7 @@ const onExit = require('./on-exit')
 const map = {}
 let mapped = false;
 
-module.exports = middleman = (req, res, next) => {
+module.exports = function middleman(req, res, next) {
   onExit();
   if (!mapped) {
     mapped = true;
