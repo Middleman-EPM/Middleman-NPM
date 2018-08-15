@@ -1,3 +1,3 @@
 //run middleman from index.js file
-import middleman from './middleman'
+const middleman = require ('./middleman')
 module.export = middleman;

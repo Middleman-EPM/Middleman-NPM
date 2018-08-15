@@ -1,11 +1,11 @@
-import wrap from './perf-hooks'
-import mapApp from './routes-mapping'
-import onExit from './on-exit'
+const wrap =   require('./perf-hooks')
+const mapApp = require('./routes-mapping')
+const onExit = require('./on-exit')
 const map = {}
 let mapped = false;
 
 module.exports= middleman = (req, res, next) => {
-  onExit();
+   onExit();
   if (!mapped){
     mapped = true;
     mapApp()
