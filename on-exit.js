@@ -17,6 +17,7 @@ module.exports = onExit = (map) => {
     const writerStream = fs.createWriteStream(filePath + '/output.json', { flags: 'a' })
       .on('finish', function () {
         console.log("Write Finish.");
+        console.log(filePath)
         process.exit();
       })
       .on('error', function (err) {
