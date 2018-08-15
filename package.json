@@ -25,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/Middleman-EPM/Middleman-NPM/issues"
   },
-  "homepage": "https://github.com/Middleman-EPM/Middleman-NPM#readme"
+  "homepage": "https://github.com/Middleman-EPM/Middleman-NPM#readme",
+  "dependencies": {
+    "axios": "^0.18.0"
+  }
 }
