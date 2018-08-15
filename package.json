@@ -1,6 +1,6 @@
 {
   "name": "middleman-npm",
-  "version": "1.0.6",
+  "version": "1.1.0",
   "description": "Middleman-EPM (Express/Node Performance Monitor) audits express routes/middleware performance and gives access to a dashboard, which visually represents the data including the route mapping",
   "main": "index.js",
   "scripts": {
