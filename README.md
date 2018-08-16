@@ -8,6 +8,6 @@ Middleman is currently only compatible with Node v8.5.
 ## Installation 
 Install the module with npm install Middleman with the global -g flag:
 
-	`npm install middleman -g`
+	npm install middleman -g
   
 
