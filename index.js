@@ -3,6 +3,7 @@ const mapApp = require('./routes-mapping');
 const onExit = require('./on-exit');
 let map = {};
 let mapped = false;
+let eventCalled = false;
 const convertRegex = require('./routes-Regexp-Handler');
 
 exports.middleman = function middleman(req, res, next) {
@@ -127,7 +128,10 @@ exports.middleman = function middleman(req, res, next) {
       // }
     }
   }
-  onExit(map);
+  if (!eventCalled) {
+    onExit(map);
+    eventCalled = true;
+  }
   next();
 };
 exports.map = map;
