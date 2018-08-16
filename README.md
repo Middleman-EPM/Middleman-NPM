@@ -23,9 +23,10 @@ You will receive an API key to view your performance data analysis to visit Midd
 	`MiddleMan site`
 	
 ## Contributors 
-	* Chris Saavedra | (https://github.com/Cssaavedra)
-	* Jung Shin | (http://github.com/wjdgh329)
-	* Mia Huynh | (https://github.com/miahuynh)
+ *Chris Saavedra | [https://github.com/Cssaavedra]
+ *Jung Shin | [http://github.com/wjdgh329]
+ *Mia Huynh | [https://github.com/miahuynh]
+ 
 ## License 
 
 Middleman is licensed under the MIT License - please see [LICENSE.md](https://help.github.com/articles/licensing-a-repository/) for details
