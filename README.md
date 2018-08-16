@@ -16,7 +16,7 @@ Install the module with npm install middleman-NPM:
 To initialize Middleman, simply require the npm module and insert Middleman to configure all your routes: 
 * *Middleman must be destructured from the object in the required phase*
 
-![alt](https://i.imgur.com/undefined.png)
+![alt](https://i.imgur.com/fjYfyGz.png)
 
 To being viewing performance data analysis of all your routes, hit  <kbd>ctrl</kbd><kbd>+c</kbd>  to end server: 
 
