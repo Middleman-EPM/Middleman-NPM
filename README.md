@@ -23,7 +23,7 @@ To being viewing performance data analysis of all your routes, hit  <kbd>ctrl</k
 ![alt text](https://i.imgur.com/46zfcse.png)
 
 
-You will receive an  to view your performance data analysis to visit Middleman site:
+Once the server has been stopped, you will receive an hash instance key to view your performance data analysis to visit Middleman site:
 ![alt](https://i.imgur.com/XyZkj14.png)
 	
 ## Contributors 
