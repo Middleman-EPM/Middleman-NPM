@@ -1,7 +1,13 @@
 const axios = require('axios');
-const server = 'http://localhost:8000/';
 const bcrypt = require('bcrypt');
 const saltRounds = 10;
+const data = {}
+
+let str = Date.now().toString();
+bcrypt.hash(str, saltRounds, (err, hash) => {
+  data.hash = hash;
+})
+
 
 module.exports = onExit = map => {
   for (const prop in map) {
@@ -27,27 +33,22 @@ module.exports = onExit = map => {
     let buffer = new Buffer('some content\n');
     const fs = require('fs');
     // Create a writable stream &  Write the data to stream with encoding to be utf8
-    let filename;
-    bcrypt.hash(Date.now(), saltRounds, (err, hash) => {
-      filename = hash;
-    })
-    map.hash = filename;
     const writerStream = fs
-      .createWriteStream(filePath + `/${Date.now()}-middleman.json`)
+      .createWriteStream(filePath + `/${str}-middleman.json`)
       .on('finish', () => {
-        console.log('Write Finish.');
-        console.log(filename);
-        map.routes = map;
-        axios.post(server, JSON.stringify(map))
-                        .then(response => console.log(response))
-                        .catch(error => console.log(error));
-        process.exit();
+        console.log('JSON file created. Please see for log of data.');
+        data.routes = map;
+
+        axios({ method: 'post', url: 'http://localhost:8000/test', data })
+          .then(() => {
+            console.log(`visit https://www.middleman.io/${data.hash}`)
+            process.exit();
+          })
       })
       .on('error', err => console.log(err.stack));
 
-    writerStream.write(JSON.stringify(map), function() {
+    writerStream.write(JSON.stringify(map), function () {
       // Now the data has been written.
-      console.log(JSON.stringify(map));
       console.log('Write completed.');
     });
 
