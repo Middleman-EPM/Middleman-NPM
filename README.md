@@ -17,13 +17,13 @@ To initialize Middleman, simply require the npm module and insert Middleman to c
 
 ![alt text](https://i.imgur.com/2SD6CMb.png)
 
-To being viewing performance data analysis of all your routes, hit <kbd>ctrl</kbd><kbd>+c</kbd> to end server: 
+To being viewing performance data analysis of all your routes, hit  <kbd>ctrl</kbd><kbd>+c</kbd>  to end server: 
 
 ![alt text](https://i.imgur.com/46zfcse.png)
 
 
 You will receive an  to view your performance data analysis to visit Middleman site:
-	`MiddleMan site`
+![alt](https://i.imgur.com/XyZkj14.png)
 	
 ## Contributors 
 * Chris Saavedra | https://github.com/Cssaavedra
