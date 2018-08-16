@@ -9,14 +9,18 @@ Middleman is currently only compatible with Node v8.5.
 Install the module with npm install middleman-NPM:
 
 	npm install middleman-NPM
+	
   ![picture alt](https://i.imgur.com/nA3zNHI.png)
   
 ## Usage 
 To initialize Middleman, simply require the npm module and insert Middleman to configure all your routes: 
+
 ![alt text](https://i.imgur.com/2SD6CMb.png)
 
-To view performance data analysis of all your routes, hit ctrl+c to end server: 
-	`image of killing the server`
+To being viewing performance data analysis of all your routes, hit <kbd>ctrl</kbd><kbd>+c</kbd> to end server: 
+
+![alt text](https://i.imgur.com/46zfcse.png)
+
 
 You will receive an  to view your performance data analysis to visit Middleman site:
 	`MiddleMan site`
