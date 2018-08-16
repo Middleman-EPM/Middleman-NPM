@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/Middleman-EPM/Middleman-NPM#readme",
   "dependencies": {
-    "axios": "^0.18.0"
+    "axios": "^0.18.0",
+    "bcrypt": "^3.0.0"
   }
 }
