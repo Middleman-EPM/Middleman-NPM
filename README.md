@@ -9,7 +9,7 @@ Middleman is currently only compatible with Node v8.5.
 Install the module with npm install middleman-NPM:
 
 	npm install middleman-NPM
-  ![picture alt](https://imgur.com/nA3zNHI)
+  ![picture alt](https://i.imgur.com/nA3zNHI.png)
   
 ## Usage 
 To initialize Middleman, simply require the npm module and insert Middleman to configure all your routes: 
