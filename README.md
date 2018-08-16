@@ -27,7 +27,7 @@ You will receive an API key to view your performance data analysis to visit Midd
    
 * Jung Shin | [http://github.com/wjdgh329]
    
-* Mia Huynh | [https://github.com/miahuynh]
+* Mia Huynh | [https://github.com/miahuynh][https://github.com/miahuynh]
  
 ## License 
 
