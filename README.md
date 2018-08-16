@@ -24,7 +24,9 @@ You will receive an API key to view your performance data analysis to visit Midd
 	
 ## Contributors 
  *Chris Saavedra | [https://github.com/Cssaavedra]
+ .
  *Jung Shin | [http://github.com/wjdgh329]
+ .
  *Mia Huynh | [https://github.com/miahuynh]
  
 ## License 
