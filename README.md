@@ -24,7 +24,8 @@ To being viewing performance data analysis of all your routes, hit  <kbd>ctrl</k
 
 
 You will receive an  to view your performance data analysis to visit Middleman site:
-![alt](https://i.imgur.com/XyZkj14.png)
+![alt](https://i.imgur.com/XyZkj14.png =250x250)
+<img src="https://i.imgur.com/XyZkj14.png" alt="alt text" width="250" height="250">
 	
 ## Contributors 
 * Chris Saavedra | https://github.com/Cssaavedra
