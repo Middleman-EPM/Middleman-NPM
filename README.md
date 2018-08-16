@@ -6,8 +6,14 @@ MiddleMan is an intuitive Express Performance Monitor that will measure performa
 Middleman is currently only compatible with Node v8.5. 
 
 ## Installation 
-Install the module with npm install Middleman with the global -g flag:
+Install the module with npm install middleman-NPM:
 
-	npm install middleman -g
+	npm install middleman-NPM
   
+## Usage 
+To initialize Middleman, simply require the npm module and to use middleman for all your routes: 
+
+	const middleman = require('middleman')
+	app.use(middlman)
+	
 
