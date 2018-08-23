@@ -77,18 +77,11 @@ exports.middleman = function middleman(req, res, next) {
         }
       }
     }
-    // console.log(route)
-    // console.log(convertRegex(globalExpress.stack[i].regexp.toString()));
-    // console.log('this is routeeeeeee:::::::',route)
-    // console.log(globalExpress.stack[i].regexp.toString().replace(/\\/g, ''));
+
     if (globalExpress.stack[i].regexp.toString().replace(/\\/g, '').includes(route)) {
       x();
     }
 
-    //console.log(route + ":::this is route");
-    // if (globalExpress.stack[i].regexp.toString().includes(route)) {
-    //check to confirm method is correct
-    // console.log('its working?')
     x = () => {
       if (
         method ===
@@ -111,9 +104,7 @@ exports.middleman = function middleman(req, res, next) {
           ].handle.__proto__.method = method;
           globalExpress.stack[i].handle.__proto__.method = routeData;
 
-          // console.log('this is the length::::::' + length)
           if (index === length - 1) {
-            // console.log('hihi::::::' + globalExpress.stack[i].route.stack[index]);
             globalExpress.stack[i].route.stack[
               index
             ].handle.__proto__.lastFunc = true;
@@ -123,9 +114,7 @@ exports.middleman = function middleman(req, res, next) {
             globalExpress.stack[i].route.stack[index].handle, map
           );
         });
-        // break;
       }
-      // }
     }
   }
   if (!eventCalled) {

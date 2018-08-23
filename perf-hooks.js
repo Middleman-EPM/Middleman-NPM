@@ -2,9 +2,7 @@ const { performance, PerformanceObserver } = require('perf_hooks');
 
 module.exports = wrap = (passedFunc, map) => {
   const fn = performance.timerify(passedFunc);
-  const funcName = passedFunc.__proto__.func;
-  const route = passedFunc.__proto__.route;
-  const method = passedFunc.__proto__.method;
+ 
 
   let obs = new PerformanceObserver((list, observer) => {
     let obj = {};
