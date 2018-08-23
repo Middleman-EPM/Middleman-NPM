@@ -32,13 +32,13 @@ module.exports = onExit = map => {
   process.on('SIGINT', code => {
     let buffer = new Buffer('some content\n');
     const fs = require('fs');
-    // Create a writable stream &  Write the data to stream with encoding to be utf8
+
     const writerStream = fs
       .createWriteStream(filePath + `/${str}-middleman.json`)
       .on('finish', () => {
         console.log('JSON file created. Please see for log of data.');
         data.routes = map;
-
+        //axios will be used to send data to middleman's external database to display data visuals
         axios({ method: 'post', url: 'http://localhost:8000/test', data })
           .then(() => {
             console.log(`visit https://www.middleman.io/${data.hash}`)
