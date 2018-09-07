@@ -1,5 +1,5 @@
-Under Active Development! Please await our website to view the data visualizaitons!
-Meanwhile, please look towards the JSON file created in your local files for further information!
+Middleman is under active development for data-driven visualizations. 
+Meanwhile, please look towards the JSON file created in your local files for further information.
 
 # Middleman-NPM
 
